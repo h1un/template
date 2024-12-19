@@ -18,6 +18,30 @@
 5. 어드민 
    1. 화면 편집 기능
    2. 일일 통계
+
+### 2024.12.19
+
+- [shadcn/ui](https://ui.shadcn.com/)
+  - 사용법 
+  ```
+  npx shadcn@latest init
+  pnpm dlx shadcn@latest add button
+  ```
+  필요할때마다 필요한 컨포넌트 추가해서 사용
+  
+  - @/components/ui 밑으로 추가되니까 커스텀 컴포넌트도 이밑에 넣으려고
+```
+@/components
+ ㄴ ui
+ ㄴ custom
+```
+
+- [v0](https://v0.dev/)
+  - vercel 에서 만든 ai 인데 똑똑이..
+
+
+구조 
+
 ### 2024.12.17 
 
 #### 프로젝트 세팅
