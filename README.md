@@ -19,6 +19,20 @@
    1. 화면 편집 기능
    2. 일일 통계
 
+### 2024.12.20
+```
+components
+│ └── layout
+│     ├── header.tsx
+│     └── sidebar
+│         ├── app-sidebar.tsx
+│         ├── nav-main.tsx
+│         ├── nav-projects.tsx
+│         ├── nav-user.tsx
+│         └── team-switcher.tsx
+└── ui // shadcn/ui 
+```
+
 ### 2024.12.19
 
 - [shadcn/ui](https://ui.shadcn.com/)
