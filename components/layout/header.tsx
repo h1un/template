@@ -12,7 +12,6 @@ interface HeaderProps {
     width?: 'full' | 'container';
     showDropdownIcons?: boolean;
     isAlwaysOpaque?: boolean;
-    isDarkMode?: boolean;
     serviceListAlignment?: 'right' | 'center';
     backgroundColor?: string;
     foregroundColor?: string;
@@ -21,7 +20,6 @@ interface HeaderProps {
 const Header = ({
                     showDropdownIcons = false,
                     isAlwaysOpaque = false,
-                    isDarkMode = false,
                     width = 'container',
                     serviceListAlignment = 'right',
                     backgroundColor = 'white',
@@ -50,7 +48,6 @@ const Header = ({
             "bg-[var(--bg-color)]": isAlwaysOpaque,
             "bg-[var(--bg-color)]/80 backdrop-blur supports-[backdrop-filter]:bg-[var(--bg-color)]/60": isScrolled && !isAlwaysOpaque,
             "bg-transparent": !isScrolled && !isAlwaysOpaque,
-            "dark": isDarkMode
         }
     )
 
@@ -75,13 +72,13 @@ const Header = ({
             <header className={headerClasses} style={headerStyle}>
                 <div className={containerClasses}>
                     <div className={cn("flex-1")}>
-                        <Link href="/" className={"flex items-center space-x-2"}>
+                        <Link href="/public" className={"flex items-center space-x-2"}>
                             <span className="font-bold text-xl text-[var(--fg-color)]">MyLogo</span>
                         </Link>
                     </div>
                     <div className={"flex-1"}>
                     <nav className={serviceListClasses}>
-                        <Link href="/"
+                        <Link href="/public"
                               className="transition-colors hover:text-[var(--fg-color)]/80 text-[var(--fg-color)] relative group">
                             About
                             <span
@@ -180,11 +177,11 @@ const Header = ({
                             <SheetContent side="right"
                                           style={{backgroundColor: 'var(--bg-color)', color: 'var(--fg-color)'}}>
                                 <nav className="flex flex-col space-y-4">
-                                    <Link href="/" className="text-xl font-medium text-[var(--fg-color)]"
+                                    <Link href="/public" className="text-xl font-medium text-[var(--fg-color)]"
                                           onClick={() => setIsOpen(false)}>
                                         홈
                                     </Link>
-                                    <Link href="/" className="text-xl font-medium text-[var(--fg-color)]"
+                                    <Link href="/public" className="text-xl font-medium text-[var(--fg-color)]"
                                           onClick={() => setIsOpen(false)}>
                                         소개
                                     </Link>
