@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import {Button} from "@/components/ui/button"
 import {router} from "next/client";
-import clsx from 'clsx';
+
 
 interface RowItemProps {
     imageSrc: string

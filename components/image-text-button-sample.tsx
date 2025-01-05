@@ -13,7 +13,7 @@ const gridItems = [
 
 export function ImageTextButtonSample() {
     return (
-        <div className="container mx-auto">
+        <div>
             <ImageTextButtonGrid items={gridItems}/>
             <h2 className="text-2xl font-bold mb-4">버전 1: 모든 행이 동일한 순서</h2>
             <div className="space-y-6 mb-12" role="list" aria-label="이미지 텍스트 그리드 버전 1">

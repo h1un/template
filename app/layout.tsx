@@ -32,7 +32,7 @@ export default function RootLayout({
           width="container"
           serviceListAlignment="right"
           showDropdownIcons={true}
-          isAlwaysOpaque={true}
+          isAlwaysOpaque={false}
           backgroundColor="pink"
           foregroundColor="white"
       />

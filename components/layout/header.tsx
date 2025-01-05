@@ -53,10 +53,12 @@ const Header = ({
 
     const containerClasses = cn(
         "flex h-16 items-center",
-        {
-            "w-full px-4": width === 'full',
-            "container px-4 mx-auto": width === 'container',
-        }
+        // {
+        //     "w-full px-4": width === 'full',
+        //     "container px-4 mx-auto": width === 'container',
+        // },
+        "container mx-auto max-w-6xl" // 추가
+
     )
 
     const serviceListClasses = cn(
