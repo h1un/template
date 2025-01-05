@@ -45,8 +45,7 @@ const Header = ({
     const headerClasses = cn(
         "fixed top-0 left-0 right-0 z-50 transition-colors duration-200",
         {
-            "bg-[var(--bg-color)]": isAlwaysOpaque,
-            "bg-[var(--bg-color)]/80 backdrop-blur supports-[backdrop-filter]:bg-[var(--bg-color)]/60": isScrolled && !isAlwaysOpaque,
+            "bg-[var(--bg-color)]": isAlwaysOpaque || ( isScrolled && !isAlwaysOpaque),
             "bg-transparent": !isScrolled && !isAlwaysOpaque,
         }
     )
@@ -57,7 +56,7 @@ const Header = ({
         //     "w-full px-4": width === 'full',
         //     "container px-4 mx-auto": width === 'container',
         // },
-        "container mx-auto max-w-6xl" // 추가
+        "container mx-auto max-w-6xl" // TODO 추가
 
     )
 
@@ -232,6 +231,7 @@ const Header = ({
                     </div>
                 </div>
             </header>
+            {/* todo 배경 가릴건지 안가릴건지 풀스크린으로 하면 슬라이드부분이 가려짐 */}
             <div className={isAlwaysOpaque ? 'h-16' : ''}></div>
         </>
     )

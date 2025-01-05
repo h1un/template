@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       <Header
-          width="container"
+          // width="container"
           serviceListAlignment="right"
           showDropdownIcons={true}
           isAlwaysOpaque={false}

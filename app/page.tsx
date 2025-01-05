@@ -3,6 +3,7 @@
 import {ImageTextButtonSample} from "@/components/image-text-button-sample";
 import TimelineSample from "@/components/section/timeline-sample";
 import FullscreenSlider from "@/components/fullscreen-slider";
+import Fullscreen from "@/components/fullscreen";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
             {/*    />*/}
             {/*</div>*/}
             <FullscreenSlider/>
+            <Fullscreen/>
             <div className={"container mx-auto px-4 max-w-6xl"}>
             <ImageTextButtonSample/>
             </div>
