@@ -6,6 +6,8 @@ import FullscreenSlider from "@/components/fullscreen-slider";
 import Fullscreen from "@/components/fullscreen";
 import IconTextRowBox from "@/components/icon-text-row-box";
 import QnA from "@/components/section/q&a";
+import PartnerLogos from "@/components/section/partner-logos";
+import ScrollingPartnerLogos from "@/components/section/partner-logos-scrolling";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
             <FullscreenSlider/>
             <Fullscreen/>
             <div className={"container mx-auto px-4 max-w-6xl"}>
+                <ScrollingPartnerLogos/>
+                <PartnerLogos/>
                 <QnA/>
                 <IconTextRowBox/>
                 <ImageTextButtonSample/>
